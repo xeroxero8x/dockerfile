@@ -21,7 +21,7 @@ WORKDIR /home/builder
 
 # Copy files and directories from the host to the builder's home directory
 COPY . /home/builder/
-
+COPY *.* /home/builder/
 # Ensure the copied files have the correct permissions
 RUN sudo chown -R builder:builder /home/builder
 
